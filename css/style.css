@@ -162,13 +162,13 @@ span, a, a:hover {
 }
 
 .bg-gray {
-  background: #f7f7f7;
+  background: #eef7fa;
 }
 .bg-gray .title:before {
-  background: #ddd;
+  background: #eef7fa;
 }
 .bg-gray .owl-theme .owl-dots .owl-dot span {
-  background: #777;
+  background: #eef7fa;
 }
 
 .o-hidden {
