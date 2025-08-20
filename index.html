@@ -67,6 +67,12 @@
 			        <a class="nav-link" href="#" data-scroll-nav="3">Portfolio</a>
 			      </li>
 			      <li class="nav-item">
+			        <a class="nav-link" href="#" data-scroll-nav="4">Publications</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#" data-scroll-nav="5">Competition Journey</a>
+			      </li>
+			      <li class="nav-item">
 			        <a class="nav-link" href="#" data-scroll-nav="6">Contact</a>
 			      </li>
 			    </ul>
@@ -371,30 +377,30 @@
 
         <!-- =====================================
         ==== Start Publications -->
-        <section class="publications section-padding" data-scroll-index="4">
-            <div class="container">
+        <section class="publications section-padding bg-img" data-scroll-index="4" data-background="img/bg.jpg" style="background-size:cover; background-position:center;">
+            <div class="container" style="background:rgba(255,255,255,0.85); border-radius:20px; padding:40px 20px; box-shadow:0 4px 24px rgba(0,0,0,0.08);">
                 <div class="row">
                     <div class="section-head full-width">
-                        <h4 class="title">Publications</h4>
+                        <h4 class="title" style="color:#222;">Publications</h4>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-md-10">
-                        <ul class="publication-list">
-                            <li class="mb-4">
-                                <h5>Paper Title One</h5>
-                                <p>A brief description of the first dummy paper, outlining its main contributions and findings in the field of data science and AI.</p>
-                                <a href="https://scholar.google.com/" target="_blank">View on Google Scholar</a>
+                        <ul class="publication-list" style="list-style:none; padding:0;">
+                            <li class="mb-4" style="margin-bottom:2.5rem;">
+                                <h5 style="color:#222; font-weight:700;">Paper Title One</h5>
+                                <p style="color:#444;">A brief description of the first dummy paper, outlining its main contributions and findings in the field of data science and AI.</p>
+                                <a href="https://scholar.google.com/" target="_blank" style="color:#bfa76a; text-decoration:underline;">View on Google Scholar</a>
                             </li>
-                            <li class="mb-4">
-                                <h5>Paper Title Two</h5>
-                                <p>This is a short summary of the second dummy publication, focusing on NLP techniques and their applications in healthcare analytics.</p>
-                                <a href="https://scholar.google.com/" target="_blank">View on Google Scholar</a>
+                            <li class="mb-4" style="margin-bottom:2.5rem;">
+                                <h5 style="color:#222; font-weight:700;">Paper Title Two</h5>
+                                <p style="color:#444;">This is a short summary of the second dummy publication, focusing on NLP techniques and their applications in healthcare analytics.</p>
+                                <a href="https://scholar.google.com/" target="_blank" style="color:#bfa76a; text-decoration:underline;">View on Google Scholar</a>
                             </li>
-                            <li class="mb-4">
-                                <h5>Paper Title Three</h5>
-                                <p>An overview of the third dummy paper, discussing generative AI models and their impact on real-world problem solving.</p>
-                                <a href="https://scholar.google.com/" target="_blank">View on Google Scholar</a>
+                            <li class="mb-4" style="margin-bottom:2.5rem;">
+                                <h5 style="color:#222; font-weight:700;">Paper Title Three</h5>
+                                <p style="color:#444;">An overview of the third dummy paper, discussing generative AI models and their impact on real-world problem solving.</p>
+                                <a href="https://scholar.google.com/" target="_blank" style="color:#bfa76a; text-decoration:underline;">View on Google Scholar</a>
                             </li>
                         </ul>
                     </div>
@@ -414,23 +420,23 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-10">
+                    <div class="col-md-12">
                         <ul class="timeline">
                             <li>
                                 <div class="timeline-title" onclick="toggleTimeline(this)">2025: GenAI Hackathon - OpenAI Sprint</div>
-                                <div class="timeline-content" style="display:none;">Built a retrieval-augmented generation pipeline for clinical Q&A, integrating LLMs with custom search and summarization modules. Led a team of 4 to a top-3 finish.</div>
+                                <div class="timeline-content">Built a retrieval-augmented generation pipeline for clinical Q&A, integrating LLMs with custom search and summarization modules. Led a team of 4 to a top-3 finish.</div>
                             </li>
                             <li>
                                 <div class="timeline-title" onclick="toggleTimeline(this)">2024: Kaggle - Healthcare NLP Challenge</div>
-                                <div class="timeline-content" style="display:none;">Developed transformer-based models for medical entity recognition and relation extraction. Achieved top 5% ranking among 1,200+ teams.</div>
+                                <div class="timeline-content">Developed transformer-based models for medical entity recognition and relation extraction. Achieved top 5% ranking among 1,200+ teams.</div>
                             </li>
                             <li>
                                 <div class="timeline-title" onclick="toggleTimeline(this)">2023: Zindi - Financial Forecasting</div>
-                                <div class="timeline-content" style="display:none;">Created ensemble models for time series forecasting of financial data, focusing on feature engineering and model interpretability. Placed 2nd overall.</div>
+                                <div class="timeline-content">Created ensemble models for time series forecasting of financial data, focusing on feature engineering and model interpretability. Placed 2nd overall.</div>
                             </li>
                             <li>
                                 <div class="timeline-title" onclick="toggleTimeline(this)">2022: Analytics Vidhya - DataFest</div>
-                                <div class="timeline-content" style="display:none;">Worked on customer churn prediction using XGBoost and SHAP for explainability. Won the 'Best Solution for Business Impact' award.</div>
+                                <div class="timeline-content">Worked on customer churn prediction using XGBoost and SHAP for explainability. Won the 'Best Solution for Business Impact' award.</div>
                             </li>
                         </ul>
                     </div>
@@ -440,7 +446,7 @@
         <script>
         function toggleTimeline(element) {
             var content = element.nextElementSibling;
-            if (content.style.display === "none") {
+            if (content.style.display === "none" || content.style.display === "") {
                 content.style.display = "block";
             } else {
                 content.style.display = "none";
