@@ -1159,12 +1159,24 @@ span, a, a:hover {
   padding: 18px 24px 18px 24px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.07);
   position: relative;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1);
+}
+.vertical-timeline-element-content:hover {
+  transform: scale(1.05) translateY(-8px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  z-index: 2;
 }
 .vertical-timeline-element-content h5 {
   margin: 0 0 6px 0;
   color: #bfa76a;
   font-size: 1.1rem;
   font-weight: 700;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.vertical-timeline-element-content h5:hover {
+  color: #222;
+  text-decoration: underline;
 }
 .vertical-timeline-element-content p {
   margin: 0 0 8px 0;
@@ -1186,6 +1198,9 @@ span, a, a:hover {
   .vertical-timeline-element-content {
     margin-left: 50px;
     padding: 14px 12px 14px 12px;
+  }
+  .vertical-timeline-element-content:hover {
+    transform: scale(1.02) translateY(-4px);
   }
 }
 /*# sourceMappingURL=style.css.map */
