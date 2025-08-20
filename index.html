@@ -404,6 +404,52 @@
         <!-- End Publications ====
         ======================================= -->
 
+        <!-- =====================================
+        ==== Start Achievements / Data Science Competition Journey -->
+        <section class="achievements section-padding" data-scroll-index="5">
+            <div class="container">
+                <div class="row">
+                    <div class="section-head full-width">
+                        <h4 class="title">Data Science Competition Journey</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <ul class="timeline">
+                            <li>
+                                <div class="timeline-title" onclick="toggleTimeline(this)">2025: GenAI Hackathon - OpenAI Sprint</div>
+                                <div class="timeline-content" style="display:none;">Built a retrieval-augmented generation pipeline for clinical Q&A, integrating LLMs with custom search and summarization modules. Led a team of 4 to a top-3 finish.</div>
+                            </li>
+                            <li>
+                                <div class="timeline-title" onclick="toggleTimeline(this)">2024: Kaggle - Healthcare NLP Challenge</div>
+                                <div class="timeline-content" style="display:none;">Developed transformer-based models for medical entity recognition and relation extraction. Achieved top 5% ranking among 1,200+ teams.</div>
+                            </li>
+                            <li>
+                                <div class="timeline-title" onclick="toggleTimeline(this)">2023: Zindi - Financial Forecasting</div>
+                                <div class="timeline-content" style="display:none;">Created ensemble models for time series forecasting of financial data, focusing on feature engineering and model interpretability. Placed 2nd overall.</div>
+                            </li>
+                            <li>
+                                <div class="timeline-title" onclick="toggleTimeline(this)">2022: Analytics Vidhya - DataFest</div>
+                                <div class="timeline-content" style="display:none;">Worked on customer churn prediction using XGBoost and SHAP for explainability. Won the 'Best Solution for Business Impact' award.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+        function toggleTimeline(element) {
+            var content = element.nextElementSibling;
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+        </script>
+        <!-- End Achievements / Data Science Competition Journey ====
+        ======================================= -->
+
     	<!-- =====================================
     	==== Start Contact -->
     	<section class="contact section-padding bg-img" data-overlay-dark="8" data-background="img/b5.jpg" data-scroll-index="6">
