@@ -26,6 +26,7 @@
 
         <!-- Core Style Css -->
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nima-shokri/timeline@main/timeline.min.css">
 
     </head>
 
@@ -413,36 +414,45 @@
         <!-- =====================================
         ==== Start Achievements / Data Science Competition Journey -->
         <section class="achievements section-padding" data-scroll-index="5">
-            <div class="container">
-                <div class="row">
-                    <div class="section-head full-width">
-                        <h4 class="title">Data Science Competition Journey</h4>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-12">
-                        <ul class="timeline">
-                            <li>
-                                <div class="timeline-title"><span class="timeline-badge">2025</span> GenAI Hackathon - OpenAI Sprint</div>
-                                <div class="timeline-content">Built a retrieval-augmented generation pipeline for clinical Q&A, integrating LLMs with custom search and summarization modules. Led a team of 4 to a top-3 finish.</div>
-                            </li>
-                            <li>
-                                <div class="timeline-title"><span class="timeline-badge">2024</span> Kaggle - Healthcare NLP Challenge</div>
-                                <div class="timeline-content">Developed transformer-based models for medical entity recognition and relation extraction. Achieved top 5% ranking among 1,200+ teams.</div>
-                            </li>
-                            <li>
-                                <div class="timeline-title"><span class="timeline-badge">2023</span> Zindi - Financial Forecasting</div>
-                                <div class="timeline-content">Created ensemble models for time series forecasting of financial data, focusing on feature engineering and model interpretability. Placed 2nd overall.</div>
-                            </li>
-                            <li>
-                                <div class="timeline-title"><span class="timeline-badge">2022</span> Analytics Vidhya - DataFest</div>
-                                <div class="timeline-content">Worked on customer churn prediction using XGBoost and SHAP for explainability. Won the 'Best Solution for Business Impact' award.</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="row">
+              <div class="section-head full-width">
+                <h4 class="title">Data Science Competition Journey</h4>
+              </div>
             </div>
+            <div class="row justify-content-center">
+              <div class="col-md-12">
+                <div class="timeline-container" id="timeline-1">
+                  <div class="timeline">
+                    <div class="timeline-item" data-text="GenAI Hackathon - OpenAI Sprint">
+                      <div class="timeline__content"><h2>2025</h2><h4>GenAI Hackathon - OpenAI Sprint</h4><p>Built a retrieval-augmented generation pipeline for clinical Q&A, integrating LLMs with custom search and summarization modules. Led a team of 4 to a top-3 finish.</p></div>
+                    </div>
+                    <div class="timeline-item" data-text="Kaggle - Healthcare NLP Challenge">
+                      <div class="timeline__content"><h2>2024</h2><h4>Kaggle - Healthcare NLP Challenge</h4><p>Developed transformer-based models for medical entity recognition and relation extraction. Achieved top 5% ranking among 1,200+ teams.</p></div>
+                    </div>
+                    <div class="timeline-item" data-text="Zindi - Financial Forecasting">
+                      <div class="timeline__content"><h2>2023</h2><h4>Zindi - Financial Forecasting</h4><p>Created ensemble models for time series forecasting of financial data, focusing on feature engineering and model interpretability. Placed 2nd overall.</p></div>
+                    </div>
+                    <div class="timeline-item" data-text="Analytics Vidhya - DataFest">
+                      <div class="timeline__content"><h2>2022</h2><h4>Analytics Vidhya - DataFest</h4><p>Worked on customer churn prediction using XGBoost and SHAP for explainability. Won the 'Best Solution for Business Impact' award.</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
+        <script src="https://cdn.jsdelivr.net/gh/nima-shokri/timeline@main/timeline.min.js"></script>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            timeline(document.querySelectorAll('#timeline-1'), {
+              forceVerticalMode: 700,
+              mode: 'horizontal',
+              verticalStartPosition: 'left',
+              visibleItems: 4
+            });
+          });
+        </script>
         <!-- End Achievements / Data Science Competition Journey ====
         ======================================= -->
 
