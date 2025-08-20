@@ -413,116 +413,154 @@
 
         <!-- =====================================
         ==== Start Achievements / Data Science Competition Journey -->
-        <section class="achievements section-padding" data-scroll-index="5">
-          <div class="container">
+        <section class="achievements section-padding" data-scroll-index="5" style="background:#1D1D1D;min-height:100vh;margin:0;font-family:'Droid Sans',sans-serif;position:relative;">
+          <style>
+            .achievements:before {
+              content: '';
+              position: fixed;
+              top: 0px;
+              left: 50%;
+              bottom: 0px;
+              transform: translateX(-50%);
+              width: 4px;
+              background-color: #fff;
+              z-index: 0;
+            }
+            .entries {
+              width: calc(100% - 80px);
+              max-width: 800px;
+              margin: auto;
+              position: relative;
+              left: -5px;
+            }
+            .entry {
+              width: calc(50% - 80px);
+              float: left;
+              padding: 20px;
+              clear: both;
+              text-align: right;
+              position: relative;
+            }
+            .entry:not(:first-child) {
+              margin-top: -60px;
+            }
+            .entry .title {
+              font-size: 32px;
+              margin-bottom: 12px;
+              position: relative;
+              color: #fff;
+            }
+            .entry .title:before {
+              content: '';
+              position: absolute;
+              width: 8px;
+              height: 8px;
+              border: 4px solid #fff;
+              background-color: #1D1D1D;
+              border-radius: 100%;
+              top: 50%;
+              transform: translateY(-50%);
+              right: -73px;
+              z-index: 1000;
+            }
+            .entry .title.big:before {
+              width: 24px;
+              height: 24px;
+              transform: translate(8px, -50%);
+            }
+            .entry .body {
+              color: #aaa;
+            }
+            .entry .body p {
+              line-height: 1.4em;
+            }
+            .entry:nth-child(2n) {
+              text-align: left;
+              float: right;
+            }
+            .entry:nth-child(2n) .title:before {
+              left: -63px;
+              right: auto;
+            }
+            .entry:nth-child(2n) .title.big:before {
+              transform: translate(-8px, -50%);
+            }
+            @media (max-width: 991px) {
+              .entry, .entry:nth-child(2n) {
+                width: 100%;
+                float: none;
+                text-align: left;
+                left: 0;
+              }
+              .entry .title:before, .entry:nth-child(2n) .title:before {
+                left: -63px;
+                right: auto;
+              }
+            }
+          </style>
+          <div class="container" style="position:relative;z-index:1;">
             <div class="row">
               <div class="section-head full-width">
-                <h4 class="title">Data Science Competition Journey</h4>
+                <h4 class="title" style="color:#fff;">Data Science Competition Journey</h4>
               </div>
             </div>
-            <div class="row justify-content-center">
-              <div class="col-md-12">
-                <div class="timeline-container" id="timeline-1">
-                  <div class="timeline">
-                    <div class="timeline-item" data-text="GenAI Hackathon - OpenAI Sprint">
-                      <div class="timeline__content">
-                        <h2>2025</h2>
-                        <h4>GenAI Hackathon - OpenAI Sprint</h4>
-                        <div class="timeline-desc" style="display:none;">Built a retrieval-augmented generation pipeline for clinical Q&A, integrating LLMs with custom search and summarization modules. Led a team of 4 to a top-3 finish.</div>
-                      </div>
-                    </div>
-                    <div class="timeline-item" data-text="Kaggle - Healthcare NLP Challenge">
-                      <div class="timeline__content">
-                        <h2>2024</h2>
-                        <h4>Kaggle - Healthcare NLP Challenge</h4>
-                        <div class="timeline-desc" style="display:none;">Developed transformer-based models for medical entity recognition and relation extraction. Achieved top 5% ranking among 1,200+ teams.</div>
-                      </div>
-                    </div>
-                    <div class="timeline-item" data-text="Zindi - Financial Forecasting">
-                      <div class="timeline__content">
-                        <h2>2023</h2>
-                        <h4>Zindi - Financial Forecasting</h4>
-                        <div class="timeline-desc" style="display:none;">Created ensemble models for time series forecasting of financial data, focusing on feature engineering and model interpretability. Placed 2nd overall.</div>
-                      </div>
-                    </div>
-                    <div class="timeline-item" data-text="Analytics Vidhya - DataFest">
-                      <div class="timeline__content">
-                        <h2>2022</h2>
-                        <h4>Analytics Vidhya - DataFest</h4>
-                        <div class="timeline-desc" style="display:none;">Worked on customer churn prediction using XGBoost and SHAP for explainability. Won the 'Best Solution for Business Impact' award.</div>
-                      </div>
-                    </div>
-                    <div class="timeline-item" data-text="DrivenData - Water Pump Prediction">
-                      <div class="timeline__content">
-                        <h2>2022</h2>
-                        <h4>DrivenData - Water Pump Prediction</h4>
-                        <div class="timeline-desc" style="display:none;">Built a random forest model to predict water pump functionality in Tanzania, focusing on feature engineering and missing data imputation.</div>
-                      </div>
-                    </div>
-                    <div class="timeline-item" data-text="Kaggle - Titanic ML Competition">
-                      <div class="timeline__content">
-                        <h2>2021</h2>
-                        <h4>Kaggle - Titanic ML Competition</h4>
-                        <div class="timeline-desc" style="display:none;">Applied logistic regression and ensemble methods to predict passenger survival, learning best practices in data preprocessing and model evaluation.</div>
-                      </div>
-                    </div>
-                    <div class="timeline-item" data-text="Zindi - Air Quality Prediction">
-                      <div class="timeline__content">
-                        <h2>2021</h2>
-                        <h4>Zindi - Air Quality Prediction</h4>
-                        <div class="timeline-desc" style="display:none;">Developed time series models to forecast air quality index, incorporating weather and pollution data for improved accuracy.</div>
-                      </div>
-                    </div>
-                    <div class="timeline-item" data-text="Analytics Vidhya - Loan Prediction">
-                      <div class="timeline__content">
-                        <h2>2020</h2>
-                        <h4>Analytics Vidhya - Loan Prediction</h4>
-                        <div class="timeline-desc" style="display:none;">Created a pipeline for loan approval prediction using XGBoost and feature selection, focusing on explainability and business impact.</div>
-                      </div>
-                    </div>
-                    <div class="timeline-item" data-text="Kaggle - House Prices">
-                      <div class="timeline__content">
-                        <h2>2020</h2>
-                        <h4>Kaggle - House Prices</h4>
-                        <div class="timeline-desc" style="display:none;">Engineered features and tuned regression models to predict house prices, achieving a top 10% leaderboard position.</div>
-                      </div>
-                    </div>
-                    <div class="timeline-item" data-text="Zindi - COVID-19 Forecasting">
-                      <div class="timeline__content">
-                        <h2>2020</h2>
-                        <h4>Zindi - COVID-19 Forecasting</h4>
-                        <div class="timeline-desc" style="display:none;">Built SEIR and machine learning models to forecast COVID-19 case numbers, collaborating with a team to optimize predictions for public health planning.</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="entries">
+              <div class="entry">
+                <div class="title">2025<br>GenAI Hackathon - OpenAI Sprint</div>
+                <div class="body" style="display:none;"><p>Built a retrieval-augmented generation pipeline for clinical Q&A, integrating LLMs with custom search and summarization modules. Led a team of 4 to a top-3 finish.</p></div>
+              </div>
+              <div class="entry">
+                <div class="title">2024<br>Kaggle - Healthcare NLP Challenge</div>
+                <div class="body" style="display:none;"><p>Developed transformer-based models for medical entity recognition and relation extraction. Achieved top 5% ranking among 1,200+ teams.</p></div>
+              </div>
+              <div class="entry">
+                <div class="title">2023<br>Zindi - Financial Forecasting</div>
+                <div class="body" style="display:none;"><p>Created ensemble models for time series forecasting of financial data, focusing on feature engineering and model interpretability. Placed 2nd overall.</p></div>
+              </div>
+              <div class="entry">
+                <div class="title">2022<br>Analytics Vidhya - DataFest</div>
+                <div class="body" style="display:none;"><p>Worked on customer churn prediction using XGBoost and SHAP for explainability. Won the 'Best Solution for Business Impact' award.</p></div>
+              </div>
+              <div class="entry">
+                <div class="title">2022<br>DrivenData - Water Pump Prediction</div>
+                <div class="body" style="display:none;"><p>Built a random forest model to predict water pump functionality in Tanzania, focusing on feature engineering and missing data imputation.</p></div>
+              </div>
+              <div class="entry">
+                <div class="title">2021<br>Kaggle - Titanic ML Competition</div>
+                <div class="body" style="display:none;"><p>Applied logistic regression and ensemble methods to predict passenger survival, learning best practices in data preprocessing and model evaluation.</p></div>
+              </div>
+              <div class="entry">
+                <div class="title">2021<br>Zindi - Air Quality Prediction</div>
+                <div class="body" style="display:none;"><p>Developed time series models to forecast air quality index, incorporating weather and pollution data for improved accuracy.</p></div>
+              </div>
+              <div class="entry">
+                <div class="title">2020<br>Analytics Vidhya - Loan Prediction</div>
+                <div class="body" style="display:none;"><p>Created a pipeline for loan approval prediction using XGBoost and feature selection, focusing on explainability and business impact.</p></div>
+              </div>
+              <div class="entry">
+                <div class="title">2020<br>Kaggle - House Prices</div>
+                <div class="body" style="display:none;"><p>Engineered features and tuned regression models to predict house prices, achieving a top 10% leaderboard position.</p></div>
+              </div>
+              <div class="entry">
+                <div class="title">2020<br>Zindi - COVID-19 Forecasting</div>
+                <div class="body" style="display:none;"><p>Built SEIR and machine learning models to forecast COVID-19 case numbers, collaborating with a team to optimize predictions for public health planning.</p></div>
               </div>
             </div>
           </div>
+          <script>
+            document.querySelectorAll('.entries .entry .title').forEach(function(title) {
+              title.style.cursor = 'pointer';
+              title.addEventListener('click', function() {
+                var body = this.parentElement.querySelector('.body');
+                if (body.style.display === 'none' || body.style.display === '') {
+                  body.style.display = 'block';
+                } else {
+                  body.style.display = 'none';
+                }
+              });
+            });
+          </script>
         </section>
-        <script src="https://cdn.jsdelivr.net/gh/nima-shokri/timeline@main/timeline.min.js"></script>
-        <script>
-          document.addEventListener('DOMContentLoaded', function() {
-            timeline(document.querySelectorAll('#timeline-1'), {
-              forceVerticalMode: 700,
-              mode: 'horizontal',
-              verticalStartPosition: 'left',
-              visibleItems: 4
-            });
-          });
-
-          document.querySelectorAll('#timeline-1 .timeline__content h4').forEach(function(title) {
-            title.style.cursor = 'pointer';
-            title.addEventListener('click', function() {
-              var desc = this.parentElement.querySelector('.timeline-desc');
-              if (desc.style.display === 'none' || desc.style.display === '') {
-                desc.style.display = 'block';
-              } else {
-                desc.style.display = 'none';
-              }
-            });
-          });
-        </script>
         <!-- End Achievements / Data Science Competition Journey ====
         ======================================= -->
 
