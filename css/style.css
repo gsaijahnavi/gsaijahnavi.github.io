@@ -1294,6 +1294,12 @@ span, a, a:hover {
 .social-button--scholar::after {
   background: #4285f4;
 }
+.social-button--topmate {
+  color: #1e1e1e;
+}
+.social-button--topmate::after {
+  background: #E6E8E6;
+}
 
 /* Beyond Work Carousel Styles */
 .beyond-work {
