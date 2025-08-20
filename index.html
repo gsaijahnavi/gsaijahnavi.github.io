@@ -425,16 +425,74 @@
                 <div class="timeline-container" id="timeline-1">
                   <div class="timeline">
                     <div class="timeline-item" data-text="GenAI Hackathon - OpenAI Sprint">
-                      <div class="timeline__content"><h2>2025</h2><h4>GenAI Hackathon - OpenAI Sprint</h4><p>Built a retrieval-augmented generation pipeline for clinical Q&A, integrating LLMs with custom search and summarization modules. Led a team of 4 to a top-3 finish.</p></div>
+                      <div class="timeline__content">
+                        <h2>2025</h2>
+                        <h4>GenAI Hackathon - OpenAI Sprint</h4>
+                        <div class="timeline-desc" style="display:none;">Built a retrieval-augmented generation pipeline for clinical Q&A, integrating LLMs with custom search and summarization modules. Led a team of 4 to a top-3 finish.</div>
+                      </div>
                     </div>
                     <div class="timeline-item" data-text="Kaggle - Healthcare NLP Challenge">
-                      <div class="timeline__content"><h2>2024</h2><h4>Kaggle - Healthcare NLP Challenge</h4><p>Developed transformer-based models for medical entity recognition and relation extraction. Achieved top 5% ranking among 1,200+ teams.</p></div>
+                      <div class="timeline__content">
+                        <h2>2024</h2>
+                        <h4>Kaggle - Healthcare NLP Challenge</h4>
+                        <div class="timeline-desc" style="display:none;">Developed transformer-based models for medical entity recognition and relation extraction. Achieved top 5% ranking among 1,200+ teams.</div>
+                      </div>
                     </div>
                     <div class="timeline-item" data-text="Zindi - Financial Forecasting">
-                      <div class="timeline__content"><h2>2023</h2><h4>Zindi - Financial Forecasting</h4><p>Created ensemble models for time series forecasting of financial data, focusing on feature engineering and model interpretability. Placed 2nd overall.</p></div>
+                      <div class="timeline__content">
+                        <h2>2023</h2>
+                        <h4>Zindi - Financial Forecasting</h4>
+                        <div class="timeline-desc" style="display:none;">Created ensemble models for time series forecasting of financial data, focusing on feature engineering and model interpretability. Placed 2nd overall.</div>
+                      </div>
                     </div>
                     <div class="timeline-item" data-text="Analytics Vidhya - DataFest">
-                      <div class="timeline__content"><h2>2022</h2><h4>Analytics Vidhya - DataFest</h4><p>Worked on customer churn prediction using XGBoost and SHAP for explainability. Won the 'Best Solution for Business Impact' award.</p></div>
+                      <div class="timeline__content">
+                        <h2>2022</h2>
+                        <h4>Analytics Vidhya - DataFest</h4>
+                        <div class="timeline-desc" style="display:none;">Worked on customer churn prediction using XGBoost and SHAP for explainability. Won the 'Best Solution for Business Impact' award.</div>
+                      </div>
+                    </div>
+                    <div class="timeline-item" data-text="DrivenData - Water Pump Prediction">
+                      <div class="timeline__content">
+                        <h2>2022</h2>
+                        <h4>DrivenData - Water Pump Prediction</h4>
+                        <div class="timeline-desc" style="display:none;">Built a random forest model to predict water pump functionality in Tanzania, focusing on feature engineering and missing data imputation.</div>
+                      </div>
+                    </div>
+                    <div class="timeline-item" data-text="Kaggle - Titanic ML Competition">
+                      <div class="timeline__content">
+                        <h2>2021</h2>
+                        <h4>Kaggle - Titanic ML Competition</h4>
+                        <div class="timeline-desc" style="display:none;">Applied logistic regression and ensemble methods to predict passenger survival, learning best practices in data preprocessing and model evaluation.</div>
+                      </div>
+                    </div>
+                    <div class="timeline-item" data-text="Zindi - Air Quality Prediction">
+                      <div class="timeline__content">
+                        <h2>2021</h2>
+                        <h4>Zindi - Air Quality Prediction</h4>
+                        <div class="timeline-desc" style="display:none;">Developed time series models to forecast air quality index, incorporating weather and pollution data for improved accuracy.</div>
+                      </div>
+                    </div>
+                    <div class="timeline-item" data-text="Analytics Vidhya - Loan Prediction">
+                      <div class="timeline__content">
+                        <h2>2020</h2>
+                        <h4>Analytics Vidhya - Loan Prediction</h4>
+                        <div class="timeline-desc" style="display:none;">Created a pipeline for loan approval prediction using XGBoost and feature selection, focusing on explainability and business impact.</div>
+                      </div>
+                    </div>
+                    <div class="timeline-item" data-text="Kaggle - House Prices">
+                      <div class="timeline__content">
+                        <h2>2020</h2>
+                        <h4>Kaggle - House Prices</h4>
+                        <div class="timeline-desc" style="display:none;">Engineered features and tuned regression models to predict house prices, achieving a top 10% leaderboard position.</div>
+                      </div>
+                    </div>
+                    <div class="timeline-item" data-text="Zindi - COVID-19 Forecasting">
+                      <div class="timeline__content">
+                        <h2>2020</h2>
+                        <h4>Zindi - COVID-19 Forecasting</h4>
+                        <div class="timeline-desc" style="display:none;">Built SEIR and machine learning models to forecast COVID-19 case numbers, collaborating with a team to optimize predictions for public health planning.</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -450,6 +508,18 @@
               mode: 'horizontal',
               verticalStartPosition: 'left',
               visibleItems: 4
+            });
+          });
+
+          document.querySelectorAll('#timeline-1 .timeline__content h4').forEach(function(title) {
+            title.style.cursor = 'pointer';
+            title.addEventListener('click', function() {
+              var desc = this.parentElement.querySelector('.timeline-desc');
+              if (desc.style.display === 'none' || desc.style.display === '') {
+                desc.style.display = 'block';
+              } else {
+                desc.style.display = 'none';
+              }
             });
           });
         </script>
