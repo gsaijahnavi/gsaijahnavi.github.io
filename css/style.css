@@ -1413,4 +1413,37 @@ body::before {
 .social-button--scholar::after {
   background: #4285f4;
 }
+
+/* Beyond Work Carousel */
+.beyond-work .carousel {
+  width: 80vw;
+  max-width: 1200px;
+  min-width: 320px;
+}
+.beyond-work .carousel-stage {
+  aspect-ratio: 16/7;
+  min-height: 400px;
+}
+.beyond-work .carousel-image {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+@media (max-width: 900px) {
+  .beyond-work .carousel {
+    width: 98vw;
+    min-width: 0;
+  }
+  .beyond-work .carousel-stage {
+    min-height: 220px;
+    aspect-ratio: 16/9;
+  }
+  .beyond-work .carousel-image {
+    min-height: 220px;
+    border-radius: 1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
